@@ -1,0 +1,250 @@
+[
+{
+    "id": 1,
+    "nombre": "Musculosa Deathwalker",
+    "tipo": "Musculosa",
+    "desc": "Musculosa del álbum Deathwalker",
+    "precio": 2500,
+    "talle": "M",
+    "img": "/images/musculosaDeathwalker.jpg",
+    "cantidad": 1,
+    "banda": "Eluveitie"
+},
+{
+    "id": 2,
+    "nombre": "Remera Blackraven",
+    "tipo": "Remera",
+    "desc": "Una remera del single Blackraven",
+    "precio": 3000,
+    "talle": "M",
+    "cantidad": 1,
+    "img": "/images/remeraBlackraven.jpg",
+    "banda": "Eluveitie"
+},
+{
+    "id": 3,
+    "nombre": "Buzo Triskel",
+    "tipo": "Buzo",
+    "desc": "Un buzo del single Triskel",
+    "precio": 3200,
+    "talle": "M",
+    "img": "/images/buzoTriskel.jpg",
+    "cantidad": 1,
+        "banda": "Eluveitie" 
+},
+{
+    "id": 4,
+    "nombre": "Remera Triskel",
+    "tipo": "Remera",
+    "desc": "Una remera del single Triskel",
+    "precio": 3000,
+    "talle": "M",
+    "img": "/images/remeraTriskel.jpg",
+    "cantidad": 1,
+    "banda": "Eluveitie" 
+},
+{
+    "nombre": "Remera Deathwalker",
+    "id": 5,
+    "tipo": "Remera",
+    "desc": "Una remera del álbum Deathwalker",
+    "precio": 3000,
+    "talle": "M",
+   "img": "/images/remeraDeathwalker.jpg",
+    "cantidad": 1,
+        "banda": "Eluveitie" 
+},
+{
+    "id": 6,
+    "nombre": "Pulsera Eluveitie",
+    "tipo": "Accesorio",
+    "desc": "Una pulsera de la banda Eluveitie",
+    "precio": 1000,
+    "talle": "Único",
+    "img": "/images/pulseraEluveitie.jpg",
+    "cantidad": 1,
+    "banda": "Eluveitie" 
+},
+{
+    "id": 7,
+    "nombre": "Remera Poison Gas",
+    "tipo": "Remera",
+    "desc": "Remera de Attack of the Dead Men",
+    "precio": 4000,
+    "talle": "Único",
+    "img": "/images/remeraPoisonGas.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 8,
+    "nombre": "Remera Swedish Pagans",
+    "tipo": "Remera",
+    "desc": "Remera de Swedish Pagans",
+    "precio": 4200,
+    "talle": "Único",
+    "img": "/images/remeraSwedishPagans.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 9,
+    "nombre": "Remera Bismarck",
+    "tipo": "Remera",
+    "desc": "Remera de la canción Bismarck",
+    "precio": 4500,
+    "talle": "Único",
+    "img": "/images/remeraBismarck.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 10,
+    "nombre": "Remera Defence of Moscow",
+    "tipo": "Remera",
+    "desc": "Remera de la canción Defence of Moscow",
+    "precio": 3900,
+    "talle": "Único",
+    "img": "/images/remeraDefenceOfMoscow.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 11,
+    "nombre": "Remera USA TOUR",
+    "tipo": "Remera",
+    "desc": "Remera del Tour realizado en USA",
+    "precio": 3900,
+    "talle": "Único",
+    "img": "/images/remeraUsaTour.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 12,
+    "nombre": "Mochila TWTEAW",
+    "tipo": "Accesorio",
+    "desc": "Mochila del disco The War to End All Wars",
+    "precio": 2000,
+    "talle": "Único",
+    "img": "/images/mochilaTWTEAW.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 13,
+    "nombre": "Velas Metal Warriors",
+    "tipo": "Accesorios",
+    "desc": "Velas alusivas a la canción Metal Warriors",
+    "precio": 950,
+    "talle": "Único",
+    "img": "/images/velasMetalWarriors.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 14,
+    "nombre": "Mochila Night Witches",
+    "tipo": "Accesorio",
+    "desc": "Mochila Alusiva a la canción Night Witches",
+    "precio": 2000,
+    "talle": "Único",
+    "img": "/images/mochilaNightWitches.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 15,
+    "nombre": "Tasa Poison Gas",
+    "tipo": "Accesorio",
+    "desc": "Tasa alusiva a la canción The Attack of the Dead Men",
+    "precio": 500,
+    "talle": "Único",
+    "img": "/images/tazaPoisonGas.png",
+    "cantidad": 1,
+    "banda": "Sabaton"
+},
+{
+    "id": 16,
+    "nombre": "Remera Forsaken",
+    "tipo": "Remera",
+    "desc": "Remera alusiva al single Forsaken",
+    "precio": 3500,
+    "talle": "Único",
+    "img": "/images/forsakenTheAftermath.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 17,
+    "nombre": "Gorra Within Temptation",
+    "tipo": "Accesorio",
+    "desc": "Gorra de lana de la Banda Within Temptation",
+    "precio": 600,
+    "talle": "Único",
+    "img": "/images/gorraWithinTemptation.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 18,
+    "nombre": "Musculosa Shed My Skin",
+    "tipo": "Musculosa",
+    "desc": "Tasa alusiva a la canción The Attack of the Dead Men",
+    "precio": 2800,
+    "talle": "Único",
+    "img": "/images/musculosaShedMySkin.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 19,
+    "nombre": "Remera The Silent Force",
+    "tipo": "Remera",
+    "desc": "Remera alusiva al disco The Silent Force",
+    "precio": 3200,
+    "talle": "Único",
+    "img": "/images/remeraTheSilentForce.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 20,
+    "nombre": "Remera THOE",
+    "tipo": "Remera",
+    "desc": "Remera alusiva al disco The Heart Of Everything",
+    "precio": 3200,
+    "talle": "Único",
+    "img": "/images/remeraTheHeartOfEverything.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 21,
+    "nombre": "Bufanda Within Temptation",
+    "tipo": "Accesorio",
+    "desc": "Bufanda de lana de la banda Within Temptation",
+    "precio": 800,
+    "talle": "Único",
+    "img": "/images/bufandaWithinTemptation.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+},
+{
+    "id": 22,
+    "nombre": "Vaso Shed My Skin",
+    "tipo": "Accesorio",
+    "desc": "Vaso alusivo al single Shed My Skin",
+    "precio": 500,
+    "talle": "Único",
+    "img": "/images/vasoShedMySkin.jpg",
+    "cantidad": 1,
+    "banda": "Within Temptation"
+}
+
+
+
+
+
+
+]
