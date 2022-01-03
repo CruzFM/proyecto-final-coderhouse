@@ -1,2 +1,2 @@
 # proyecto-final-coderhouse
-This is my first JS project, simulating an e-commerce.
+This is my first JS project, which simulates an e-commerce website.
