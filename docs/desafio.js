@@ -8,12 +8,6 @@ let botonFiltroBanda = $('#botonFiltroBanda');
 
 let botonFiltroPrecio = $('#botonFiltroPrecio');
 
-// función que muestra la lista que contiene los filtros
-const mostrarFiltros = (boton, lista) => {
-  boton.click(function(){
-    lista.fadeIn();
-  })
-}
 
 // Crea array de objetos. Contiene cada uno de los objetos disponibles en la página.
 const stockProductos = [];
@@ -50,7 +44,7 @@ function mostrarProducts(array) {
     div.classList.add("estiloCard");
     div.innerHTML += `  <div class="card">
                                 <img src="${producto.img}" class="card-img-top" alt="">
-                                <div class="card-body">
+                                <div class="card-body" id="bodyCard">
                                     <h3>${producto.nombre}</h3>
                                     <h4>${producto.banda}</h4>
                                     <p class="card-text">$${producto.precio}</p>
@@ -143,11 +137,33 @@ function actualizacionCarrito() {
   localStorage.setItem("keyProductosCarrito", JSON.stringify(carritoCompras));
 }
 
-mostrarFiltros(botonFiltroProductos, $('#listaFiltroProductos'));
+// función que muestra la lista que contiene los filtros por PRODUCTOS
+botonFiltroProductos.click( ()=> {
+  if($('#listaFiltroProductos').css("display") === "none"){
+    $('#listaFiltroProductos').fadeIn();
+  } else {
+    $('#listaFiltroProductos').fadeOut()
+  }
+});
 
-mostrarFiltros(botonFiltroBanda, $('#listaFiltroBanda'));
+// función que muestra la lista que contiene los filtros por BANDA
+botonFiltroBanda.click( ()=> {
+  if($('#listaFiltroBanda').css("display") === "none"){
+    $('#listaFiltroBanda').fadeIn();
+  } else {
+    $('#listaFiltroBanda').fadeOut()
+  }
+})
 
-mostrarFiltros(botonFiltroPrecio, $('#listaFiltroPrecio'));
+// función que muestra la lista que contiene los filtros por PRECIO
+botonFiltroPrecio.click( ()=>{
+  if($('#listaFiltroPrecio').css("display") === "none"){
+    $('#listaFiltroPrecio').fadeIn();
+  } else {
+    $('#listaFiltroPrecio').fadeOut()
+  }
+})
+
 
 // Modo oscuro
 
@@ -164,10 +180,11 @@ localStorage.setItem('darkMode', darkMode);
 $(()=> {
   if (localStorage.getItem('darkMode') == "dark") {
     $('body').addClass('darkMode');
+    $('#bodyCard').addClass("darkMode--card");
     $('#darkModeButton').hide();
     $('#lightModeButton').show();
   } else {
-    $('#lightmModeButton').hide();
+    $('#lightModeButton').hide();
   }
 
   $('#darkModeButton').click( ()=>{
@@ -179,7 +196,7 @@ $(()=> {
   });
 
   $('#lightModeButton').click( ()=>{
-    $('#lightmModeButton').hide();
+    $('#lightModeButton').hide();
     $('#darkModeButton').show();
     $('body').removeClass("darkMode")
     $('.card-body').removeClass("darkMode--card");
