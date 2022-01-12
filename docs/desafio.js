@@ -39,17 +39,20 @@ function mostrarProducts(array) {
   array.forEach((producto) => {
     let div = document.createElement("div");
     div.classList.add("col-3");
-    div.classList.add("col-md-4");
-    div.classList.add("col-sm-6");
+    div.classList.add("col-lg-4");
+    div.classList.add("col-md-6");
+    div.classList.add("col-sm-12");
     div.classList.add("estiloCard");
     div.innerHTML += `  <div class="card">
                                 <img src="${producto.img}" class="card-img-top" alt="">
-                                <div class="card-body" id="bodyCard">
+                                <div class="card-body">
                                     <h3>${producto.nombre}</h3>
                                     <h4>${producto.banda}</h4>
                                     <p class="card-text">$${producto.precio}</p>
                                     <div>
-                                    <a id="botonAgregar${producto.id}" class="btn btn-primary">Agregar al carrito</a>
+                                    <a id="botonAgregar${producto.id}" class="btn btn-primary">
+                                    <img src="./images/agregar-carrito-COLORNEGRO.png" alt="Añadir al carrito" id="añadirCarrito">
+                                    </a>
                                     </div>
                                 </div>
                             </div> `;
@@ -86,7 +89,9 @@ function agregarAlCarrito(id) {
                                 <p>${agregarProducto.nombre}</p>
                                 <p>Cantidad: <span id="cantidad${agregarProducto.id}">${agregarProducto.cantidad}</span></p>
                                 <p>$${agregarProducto.precio}</p>
-                                <a id="botonEliminar${agregarProducto.id}" class="btn btn-primary">Eliminar</a>
+                                <a id="botonEliminar${agregarProducto.id}" class="btn btn-primary">
+                                <img src="./images/trash.png" alt="Eliminar del carrito" class="eliminarCarrito">
+                                </a>
                             </div>`;
     contenedorDeCarrito.appendChild(div);
 
@@ -180,7 +185,7 @@ localStorage.setItem('darkMode', darkMode);
 $(()=> {
   if (localStorage.getItem('darkMode') == "dark") {
     $('body').addClass('darkMode');
-    $('#bodyCard').addClass("darkMode--card");
+    $('.card-body').addClass("darkMode--card");
     $('#darkModeButton').hide();
     $('#lightModeButton').show();
   } else {

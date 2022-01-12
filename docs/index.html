@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body id="body" class="navFijado">
+<body id="body" class="navFijado body">
     <header class="estiloHeader" id="header">
         <nav class="estiloNav" id="nav">
             <div class="logoImprovisado">
@@ -20,9 +20,9 @@
                 </a>
             </div>
             <div>
-                <button type="button" class="btn btn-primary containerBotonCarrito" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary containerBotonCarrito" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botonCarrito">
                     <!-- Carrito de Compras -->
-                    <img src="./images/carrito-de-compras.png" alt="carrito de compras" class="botonCarrito">
+                    <img src="./images/carrito-de-compras-COLORNEGRO.png" alt="carrito de compras" class="botonCarritoImagen">
                 </button>
             </div>
         </nav>
@@ -93,7 +93,7 @@
                                 </li>
 
                                 <li>
-                                    <button>Within Temptaion</button> 
+                                    <button>Within Temptation</button> 
                                 </li>
                             </ul>
                         </li>
@@ -123,10 +123,9 @@
             </aside>
         </section>
         <section class="seccionPrincipal container-fluid">
-            <article class="row row-cols-1 row-cols-md-2" id="contenedorProductos">
+            <article class="row row-cols-1 row-cols-md-2 contenedorProductosMedia" id="contenedorProductos">
 
             </article>
-
         </section>
     </main>
     <footer>Footer con información</footer>
