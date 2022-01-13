@@ -145,27 +145,27 @@ function actualizacionCarrito() {
 // función que muestra la lista que contiene los filtros por PRODUCTOS
 botonFiltroProductos.click( ()=> {
   if($('#listaFiltroProductos').css("display") === "none"){
-    $('#listaFiltroProductos').fadeIn();
+    $('#listaFiltroProductos').show();
   } else {
-    $('#listaFiltroProductos').fadeOut()
+    $('#listaFiltroProductos').hide()
   }
 });
 
 // función que muestra la lista que contiene los filtros por BANDA
 botonFiltroBanda.click( ()=> {
   if($('#listaFiltroBanda').css("display") === "none"){
-    $('#listaFiltroBanda').fadeIn();
+    $('#listaFiltroBanda').show();
   } else {
-    $('#listaFiltroBanda').fadeOut()
+    $('#listaFiltroBanda').hide()
   }
 })
 
 // función que muestra la lista que contiene los filtros por PRECIO
 botonFiltroPrecio.click( ()=>{
   if($('#listaFiltroPrecio').css("display") === "none"){
-    $('#listaFiltroPrecio').fadeIn();
+    $('#listaFiltroPrecio').show();
   } else {
-    $('#listaFiltroPrecio').fadeOut()
+    $('#listaFiltroPrecio').hide()
   }
 })
 

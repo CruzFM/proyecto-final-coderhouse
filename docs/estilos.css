@@ -76,7 +76,7 @@ body {
 }
 
 .estiloCard img{
-    width: 50%;
+    width: 100%;
 }
 
 .estiloCarrito{
@@ -182,14 +182,15 @@ p {font-size: 18px;}
 button{
     border: none;
     background-color: white;
+    transition: background-color 800ms ease;
 }
 
 .darkMode{
-    background-color: rgb(3, 3, 104);
+    background-color: #424141;
     color: rgb(208, 188, 188);
 }
 .darkMode button {
-    background-color: rgb(3, 3, 104);
+    background-color: #424141;
     color: rgb(208, 188, 188);
 }
 div .card .darkMode--card{
@@ -197,7 +198,7 @@ div .card .darkMode--card{
 }
 
 .darkMode .modal-content{
-    background-color: rgb(3, 3, 104);
+    background-color: #424141;
 }
 
 .botonCambioDeModo{
@@ -219,21 +220,6 @@ div .card .darkMode--card{
     background-color: rgb(182, 182, 162);
 }
 
-@media (max-width: 576px) {
-
-    .seccionPrincipal{
-        width: 100%;
-    }
-    .contenedorProductosMedia {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .contenedorProductosMedia div {
-        width: 100%;
-    }
-}
-
 #añadirCarrito {
     width: 30px;
 }
@@ -248,4 +234,19 @@ a.btn.btn-primary:hover{
 
 .eliminarCarrito{
     width: 30px;
+}
+
+@media (max-width: 576px) {
+
+    .seccionPrincipal{
+        width: 100%;
+    }
+    .contenedorProductosMedia {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenedorProductosMedia div {
+        width: 100%;
+    }
 }
