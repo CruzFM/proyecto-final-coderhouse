@@ -24,18 +24,71 @@ const header = document.querySelector("#header");
 
 const topeOfNav = header.offsetHeight;
 
+const botonRemera = $('#botonRemera');
+
+const botonBuzo = $('#botonBuzo');
+
+const botonAccesorio = $('#botonAccesorio');
+
+const botonEluveitie = $('#botonEluveitie');
+
+const botonSabaton = $('#botonSabaton');
+
+const botonWT = $('#botonWT');
+
+const limpiarFiltros = $('#limpiarFiltros');
+
+const botonPrecioMayor = $('#botonPrecioMayor');
+
+const botonPrecioMenor = $('#botonPrecioMenor');
+
 $.getJSON("productos.JSON", function (response) {
-  // console.log(response);
   response.forEach((elemento) => {
     stockProductos.push(elemento);
   });
 mostrarProducts(stockProductos);
 });
 
+
+botonRemera.click( ()=>{
+  mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Remera"))
+});
+
+botonBuzo.click( () => {
+  mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Buzo"))
+});
+
+botonAccesorio.click( ()=>{
+  mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Accesorio"))
+});
+
+botonEluveitie.click( ()=> {
+  mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Eluveitie"))
+});
+
+botonSabaton.click( ()=>{
+  mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Sabaton"))
+});
+
+botonWT.click( ()=> {
+  mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Within Temptation"))
+});
+
+limpiarFiltros.click( ()=>{
+  mostrarProducts(stockProductos);
+})
+
+botonPrecioMayor.click( ()=> {
+  mostrarProducts(stockProductos.sort((a,b) => b.precio - a.precio))
+})
+
+botonPrecioMenor.click( () => {
+  mostrarProducts(stockProductos.sort((a,b) => a.precio - b.precio))
+})
 // Muestra el array de productos en el HTML
 
-
 function mostrarProducts(array) {
+  contenedorProductos.innerHTML='';
   array.forEach((producto) => {
     let div = document.createElement("div");
     div.classList.add("col-3");
@@ -185,7 +238,6 @@ localStorage.setItem('darkMode', darkMode);
 $(()=> {
   if (localStorage.getItem('darkMode') == "dark") {
     $('body').addClass('darkMode');
-    $('.card-body').addClass("darkMode--card");
     $('#darkModeButton').hide();
     $('#lightModeButton').show();
   } else {
@@ -194,7 +246,6 @@ $(()=> {
 
   $('#darkModeButton').click( ()=>{
     $('body').addClass("darkMode");
-    $('.card-body').addClass("darkMode--card");
     $('#darkModeButton').hide();
     $('#lightModeButton').show();
     localStorage.setItem('darkMode', "dark");
@@ -204,11 +255,9 @@ $(()=> {
     $('#lightModeButton').hide();
     $('#darkModeButton').show();
     $('body').removeClass("darkMode")
-    $('.card-body').removeClass("darkMode--card");
     localStorage.setItem('darkMode', "light");
   })
 
 } )
-
 
 

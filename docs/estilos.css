@@ -58,7 +58,7 @@ body {
 .seccionPrincipal {
     /* Utiliza el ancho restante */
     flex: 1;
-    /* hace scrolleable la seccioin */
+    /* hace scrolleable la seccion */
     overflow: auto;
     overflow-x: hidden;
     overflow-y: auto;
@@ -70,9 +70,7 @@ body {
 }
 .card {
     margin-top: 10%;
-}
-.estiloCard .card {
-    border: solid 1px black;
+    border: none;
 }
 
 .estiloCard img{
@@ -193,10 +191,10 @@ button{
     background-color: #424141;
     color: rgb(208, 188, 188);
 }
-div .card .darkMode--card{
+
+body.darkMode .card .card-body{
     background-color: rgb(61, 61, 84);
 }
-
 .darkMode .modal-content{
     background-color: #424141;
 }
@@ -236,6 +234,13 @@ a.btn.btn-primary:hover{
     width: 30px;
 }
 
+.darkMode header nav {
+    background-color: #424141;
+}
+
+li button:hover{
+    background-color: rgb(196, 131, 131);
+}
 @media (max-width: 576px) {
 
     .seccionPrincipal{
