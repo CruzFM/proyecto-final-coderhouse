@@ -8,6 +8,7 @@ let botonFiltroBanda = $('#botonFiltroBanda');
 
 let botonFiltroPrecio = $('#botonFiltroPrecio');
 
+let botonFinalizarCompra = $('#finalizarCompra');
 
 // Crea array de objetos. Contiene cada uno de los objetos disponibles en la página.
 const stockProductos = [];
@@ -49,42 +50,56 @@ $.getJSON("productos.JSON", function (response) {
 mostrarProducts(stockProductos);
 });
 
+// Realiza un filtro de los productos por tipo
 
+// Filtro por tipo: remera
 botonRemera.click( ()=>{
   mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Remera"))
 });
 
+// Filtro por tipo: Buzo
 botonBuzo.click( () => {
   mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Buzo"))
 });
 
+// Filtro por tipo: Accesorio
 botonAccesorio.click( ()=>{
   mostrarProducts(stockProductos.filter(elemento => elemento.tipo === "Accesorio"))
 });
 
+
+// Realiza filtro por banda (grupo musical al que pertenece el producto)
+
+// Filtro por banda: Eluveitie
 botonEluveitie.click( ()=> {
   mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Eluveitie"))
 });
 
+// Filtro por banda: Sabaton
 botonSabaton.click( ()=>{
   mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Sabaton"))
 });
 
+// Filtro por banda: Within Temptation
 botonWT.click( ()=> {
   mostrarProducts(stockProductos.filter(elemento => elemento.banda === "Within Temptation"))
 });
 
+// Limpia los filtros anteriores, mostrando el array de productos completo.
 limpiarFiltros.click( ()=>{
   mostrarProducts(stockProductos);
 })
 
+//Ordena los productos de mayor a menor
 botonPrecioMayor.click( ()=> {
   mostrarProducts(stockProductos.sort((a,b) => b.precio - a.precio))
 })
 
+//Ordena los productos de menor a mayor
 botonPrecioMenor.click( () => {
   mostrarProducts(stockProductos.sort((a,b) => a.precio - b.precio))
 })
+
 // Muestra el array de productos en el HTML
 
 function mostrarProducts(array) {
@@ -261,3 +276,13 @@ $(()=> {
 } )
 
 
+// Finalizar compra
+
+botonFinalizarCompra.click( ()=> {
+  if (carritoCompras.length >= 1) {
+    localStorage.setItem('compra', JSON.stringify(carritoCompras))
+    alert("¡Gracias por confiar en nosotros! En breve recibirá su compra.");
+  }else {
+    alert("No ha cargado ningún producto!");
+  }
+})

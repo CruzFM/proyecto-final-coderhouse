@@ -246,6 +246,9 @@ ul li button {
     /* font-size: 1.5rem; */
     font-weight: 600;
 }
+.btn.btn-primary.botonFinalizarCompra {
+    width: 70px;
+}
 @media (max-width: 576px) {
 
     .seccionPrincipal{
