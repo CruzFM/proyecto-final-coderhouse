@@ -241,6 +241,11 @@ a.btn.btn-primary:hover{
 li button:hover{
     background-color: rgb(196, 131, 131);
 }
+
+ul li button {
+    /* font-size: 1.5rem; */
+    font-weight: 600;
+}
 @media (max-width: 576px) {
 
     .seccionPrincipal{
@@ -253,5 +258,20 @@ li button:hover{
     }
     .contenedorProductosMedia div {
         width: 100%;
+    }
+
+    .main--sidebar{
+        width: 160px;
+    }
+    ul li button {
+        font-size: 1.3rem;
+    }
+
+    .estiloHeader{
+        height: 50%;
+    }
+
+    .estiloNav{
+        height: 25%;
     }
 }
