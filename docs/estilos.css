@@ -19,8 +19,32 @@ body {
     height: 100%;
     transition: background-color 800ms ease;
 }
+
 .body{
     font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    height: 15vh;
+    border-top: 2px groove rgb(175, 169, 169);
+    background-color: #333;
+    color: rgb(208, 188, 188);
+
+}
+
+.estiloFooter {
+    height: 100%;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.estiloFooter div{
+    height: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .estiloHeader {
@@ -33,7 +57,6 @@ body {
     height: 70%;
     width: 100%;
 }
-
 
 .estiloNav{
     display: flex;
@@ -153,6 +176,7 @@ p {font-size: 18px;}
     font-size: 1.95rem;
     font-weight: 600;
     line-height: 3.5rem;
+
 }
 .main--sidebar__aside ul li ul{
     border-left: 3px solid rgb(209, 73, 73);
@@ -249,6 +273,7 @@ ul li button {
 .btn.btn-primary.botonFinalizarCompra {
     width: 70px;
 }
+
 @media (max-width: 576px) {
 
     .seccionPrincipal{
